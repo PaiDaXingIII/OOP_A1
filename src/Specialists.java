@@ -1,10 +1,10 @@
-public class Generalpractitioners extends HealthProfessional {
+public class Specialists extends HealthProfessional {
 
     private String department;
-    public Generalpractitioners() {
+    public Specialists() {
         super();
     }
-    public Generalpractitioners(int ID, String name, String type, String department) {
+    public Specialists(int ID, String name, String type, String department) {
         super(ID, name, type);
         this.department = department;
     }
@@ -12,7 +12,7 @@ public class Generalpractitioners extends HealthProfessional {
     public void printAllVariables() {
         super.printAllVariables();
         System.out.println("Department: " + department);
-        System.out.println("Health Professional Type: Other Health Professional");
+        System.out.println("Health Professional Type: Specialists");
     }
     public String getDepartment() {
         return department;
